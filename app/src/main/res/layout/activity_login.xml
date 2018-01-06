@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="2.2"
+        android:background="@drawable/background_loginmain"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/login_header1">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:src="@drawable/title_logo"
+    android:layout_gravity="left|center_vertical"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="@string/login_heading"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.8">
+
+            <EditText
+                android:id="@+id/u_email"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/message_new"
+                android:textColor="#828282"
+                android:hint="@string/login_username"
+                android:singleLine="true"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:background="@drawable/edit_text_back"
+                android:layout_height="match_parent"
+                android:text=""
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.8">
+            <EditText
+                android:id="@+id/u_pass"
+                android:layout_width="match_parent"
+                android:hint="@string/login_password"
+                android:textColor="#828282"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:drawableLeft="@drawable/paass_icon"
+                android:background="@drawable/edit_text_back"
+                android:layout_height="match_parent"
+                android:text=""
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.8">
+<TextView
+    android:id="@+id/login_txt"
+    android:layout_width="match_parent"
+    android:shadowColor="#000000"
+    android:text="LOGIN"
+    android:textColor="#ffffff"
+    android:gravity="center"
+    android:background="@drawable/round_corner_login"
+    android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:weightSum="2"
+            android:layout_weight="1.1">
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:id="@+id/relLayContactUs"
+    >
+<ImageView
+    android:id="@+id/what_app_icon"
+    android:layout_width="wrap_content"
+    android:src="@drawable/phone_icon"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="#222222"
+        android:text="Call"
+        android:paddingLeft="10dp"
+        android:drawableRight="@drawable/sep_icon"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/what_app_icon"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/forgot_pass_txt"
+                    android:layout_width="match_parent"
+                    android:textColor="#018995"
+                    android:text="Forgot Password ?"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/sep_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"></LinearLayout>
+</LinearLayout>

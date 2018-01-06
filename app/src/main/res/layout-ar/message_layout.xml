@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bottom_write_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/message_bar">
+
+            <EditText
+                android:id="@+id/chatText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/message_field"
+                android:gravity="start|left"
+                android:hint="@string/write_here"
+                android:padding="5sp"
+                android:textColor="@color/textFieldColor"
+                android:textDirection="locale" />
+
+            <Button
+                android:id="@+id/buttonSend"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="5sp"
+                android:background="@drawable/send_button"
+                android:padding="15sp"
+                android:paddingBottom="5sp"
+                android:paddingEnd="15sp"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp"
+                android:paddingTop="5sp"
+                android:text="@string/btn_send"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_above="@id/bottom_write_bar"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="35dip"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"></ListView>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/anim_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_write_bar"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:visibility="gone"
+            app:indicatorColor="#000000"
+            app:indicatorName="BallPulseIndicator" />
+
+    </RelativeLayout>
+
+</LinearLayout>

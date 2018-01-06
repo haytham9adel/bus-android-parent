@@ -1,0 +1,255 @@
+<resources>
+    <string name="app_name">M3aak Parent</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+    <string name="wait">Please Wait...</string>
+    <string name="continue_txt">Continue</string>
+    <string name="no">No</string>
+    <string name="settings">Settings</string>
+    <string name="update_setting">Update Settings</string>
+    <string name="student_tracking">Student Tracking</string>
+    <string name="destination">Destination</string>
+    <string name="source">Source</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">M3aak Tracking</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="servernotresponding">Server Not Responding</string>
+    <string name="nointernet">Please check internet connection !</string>
+    <string name="fieldempty">Field cannot be empty.</string>
+    <string name="confirm_pwd_different">New password and confirm password are not same.</string>
+    <string name="tab">Tab</string>
+    <string name="page">Page</string>
+    <string name="btn_send">Send</string>
+    <string-array name="menulist">
+        <item>Dynamic Tab 1</item>
+        <item>Dynamic Tab 2</item>
+        <item>Dynamic Tab 3</item>
+        <item>Dynamic Tab 4</item>
+        <item>Dynamic Tab 5</item>
+        <item>Dynamic Tab 6</item>
+        <item>Dynamic Tab 7</item>
+    </string-array>
+    <string name="login_heading">User Login</string>
+    <string name="login_username">User Id</string>
+    <string name="login_password">Password</string>
+    <string name="forgotpwd_heading">Forgot Password</string>
+    <string name="changepwd_current">Current Password</string>
+    <string name="changepwd_new">New Password</string>
+    <string name="changepwd_newconfirm">Confirm New Password</string>
+
+
+    <string name="notifications">Push Notifications</string>
+    <string name="parent_profile">Parent Profile</string>
+    <string name="updating_attendance">Updating Attendance</string>
+    <string name="fetching">Fetching</string>
+    <string name="please_confirm">Please Confirm</string>
+    <string name="notgoingschool">* Now you are making that your student will not going to school on selected days.</string>
+    <string name="reason">Enter reason</string>
+    <string name="went_wrong">Something went wrong.</string>
+    <string name="selectdates">Select dates.</string>
+    <string name="setting_not_saved">Setting not saved.</string>
+
+    <string name="no_internet">Please Check Your Internet Connection !</string>
+    <string name="enter_valid_email">Enter valid email address.</string>
+    <string name="try_again">Please try again !</string>
+    <string name="login">Login</string>
+    <string name="fetching_list">Fetching List</string>
+    <string name="student_report">Student Report</string>
+    <string name="incorrect_dates">Incorrect dates selection.</string>
+    <string name="data_not_available">Data not available.</string>
+    <string name="norecordfound">No record found !</string>
+    <string name="attendance_report">Attendance Report</string>
+    <string name="student_info">Student Information</string>
+    <string name="write_msg">Please write message and try again !</string>
+
+    <!--"Sun", "Mon", "Tue",
+                "Wed", "Thu", "Fri", "Sat"-->
+    <string-array name="week_name">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+
+    <!--"January", "February", "March",
+                "April", "May", "June", "July", "August", "September",
+                "October", "November", "December"-->
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <!--"Attendance Report", "Student Info"-->
+    <string-array name="child_tab">
+        <item>Attendance Report</item>
+        <item>Student Info</item>
+    </string-array>
+
+    <!--Navigation menu string-->
+    <!--"Home", "Profile", "Chat With School", "Notifications", "Report Absent", "Change Password", "Settings", "Log Out"-->
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="chat_with_school">Chat With School</string>
+    <string name="notification">Notifications</string>
+    <string name="report_absent">Report Absent</string>
+    <string name="change_pass">Change Password</string>
+    <string name="setting">Settings</string>
+    <string name="log_out">Log Out</string>
+
+
+    <string name="remember_me">Remember Me</string>
+    <string name="login_txt">LOGIN</string>
+    <string name="call">Call</string>
+    <string name="parent_login">PARENT LOGIN</string>
+    <string name="submit">SUBMIT</string>
+    <string name="present">Present</string>
+    <string name="present_total">Total Present</string>
+    <string name="absent_total">Total Absent</string>
+    <string name="holidays_total">Total Holidays</string>
+    <string name="absent">Absent</string>
+    <string name="holidays">Holidays</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="search">Search</string>
+    <string name="email">Email</string>
+    <string name="user_name">User Name</string>
+    <string name="first_name">First Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="family_name">Family Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="english">English</string>
+    <string name="arabic">العربية</string>
+    <string name="chat">Chat</string>
+    <string name="CheckedIn">CheckedIn</string>
+    <string name="CheckedOut">CheckedOut</string>
+    <string name="busspeedgreaterthan">Bus speed greater than</string>
+    <string name="busatwrongroute">Bus at wrong route</string>
+    <string name="update">Update</string>
+    <string name="view_detail">View Detail</string>
+    <string name="student_list">Student List</string>
+    <string name="language">Language</string>
+    <string name="sound">Sound</string>
+    <string name="messages">SMS Messages</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="language_title">Select preferred Language</string>
+    <string name="write_here">Write here</string>
+    <string name="setting_saved">Settings Saved successfully.</string>
+
+    <string name="father_name">Father name</string>
+    <string name="grand_name">Grand name</string>
+    <string name="gender">Gender</string>
+    <string name="class_">Class</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="nationality">Nationality</string>
+    <string name="blood_type">Blood Type</string>
+    <string name="driver_instant_message">Driver instant messages</string>
+    <string name="morning_arrival_msg">Morning Before arrival within 15 min</string>
+    <string name="evening_arrival_msg">Evening Before arrival within 15 min</string>
+
+    <string name="change_language">Change Language</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="want_logout">Do you want to logout ?</string>
+
+    <string name="no_number">Number not available.</string>
+
+    <string name="km">km/h</string>
+
+
+
+    <string name="ble_not_supported">BLE is not supported.</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="about">About BTDemo</string>
+    <string name="version">Version</string>
+    <string name="unknown_version">Unknown version</string>
+    <string name="ok">OK</string>
+
+    <!-- Activity -->
+    <string name="apdu_command">APDU command</string>
+    <string name="atr">ATR</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="authentication_key">Authentication Key</string>
+    <string name="battery_service">Battery service</string>
+    <string name="battery_level">Battery level: </string>
+    <string name="battery_status">Battery status: </string>
+    <string name="card_reader_not_ready">Card reader is not ready</string>
+    <string name="card_status_2">Card status: </string>
+    <string name="clear">Clear</string>
+    <string name="connection_status">Connection status: </string>
+    <string name="device_info">Device Info</string>
+    <string name="escape_command">Escape command</string>
+    <string name="fw_revision">FW revision: </string>
+    <string name="hw_revision">HW revision: </string>
+    <string name="get_battery_level">Get Battery Level</string>
+    <string name="get_battery_status">Get Battery Status</string>
+    <string name="get_device_info">Get Device Info</string>
+    <string name="get_card_status">Get Card Status</string>
+    <string name="set_tx_power">Set Tx Power</string>
+    <string name="manufacturer">Manufacturer: </string>
+    <string name="model_num">Model Num: </string>
+    <string name="noData"></string>
+    <string name="power_off_card">Power Off Card</string>
+    <string name="power_on_card">Power On Card</string>
+    <string name="serial_num">Serial Num: </string>
+    <string name="card_status">Card Status</string>
+    <string name="start_polling">Start Polling</string>
+    <string name="status_change_notifications">Status change notifications</string>
+    <string name="stop_polling">Stop Polling</string>
+    <string name="system_id">System ID: </string>
+    <string name="transmit_apdu">Transmit APDU</string>
+    <string name="transmit_escape_command">Transmit Escape Command</string>
+
+    <string-array name="tx_power_values">
+        <item>-23 dBm</item>
+        <item>-6 dBm</item>
+        <item>0 dBm</item>
+        <item>4 dBm</item>
+    </string-array>
+
+    <!-- Connection status -->
+    <string name="connect">Connect</string>
+    <string name="connected">Connected</string>
+    <string name="connecting">Connecting</string>
+    <string name="connect_fail">Fail to connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="disconnecting">Disconnecting</string>
+    <string name="disconnect_fail">Fail to disconnect</string>
+
+    <!-- Menu items -->
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+
+    <string name="driver" >Driver : </string>
+
+
+    <string name="instant_message">Instant Messages</string>
+    <string name="morning_msg">Morning Arrival</string>
+    <string name="evening_msg">Evening Arrival</string>
+    <string name="checkin_msg">Check In</string>
+    <string name="checkOut_msg">Check Out</string>
+</resources>

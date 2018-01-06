@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/singleMessageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linLaySelf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="60dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/bg_msg_you"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingBottom="3dip"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/lblUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginStart="5dip"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textDirection="locale"
+                android:paddingStart="5dp"
+                android:paddingTop="5dip"
+                android:textColor="#7e7e7e"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/lblMsgTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="5dip"
+                android:text="5151515151515"
+                android:textColor="#7e7e7e"
+                android:textDirection="locale"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/lblMsgFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="tetintsoitje oslkosd fj"
+                android:textColor="#000000"
+                android:textDirection="locale"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/read_unread_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linLayOtherd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:orientation="vertical"
+            android:textDirection="rtl"
+            android:padding="5dp"
+            android:visibility="visible"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLayOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bg_msg_from"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/lblAdminName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginStart="5dip"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textDirection="locale"
+                android:paddingStart="5dp"
+                android:paddingTop="5dip"
+                android:textColor="#7e7e7e"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/lblMsgTimeOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="5dp"
+                android:textColor="#7e7e7e"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/singleMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:padding="5dp"
+                android:text="sf sf sf sf sf"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

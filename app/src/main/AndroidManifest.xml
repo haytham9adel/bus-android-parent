@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.m3aak.parentapp">
+
+    <!-- Required for make call -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission
+        android:name="trackingbus.rudiment.com.trackingbus.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="trackingbus.rudiment.com.trackingbus.permission.MAPS_RECEIVE" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="trackingbus.rudiment.com.trackingbus.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="trackingbus.rudiment.com.trackingbus.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="net.m3aak.parentapp.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/parent_app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="net.m3aak.parentapp.SplashActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.m3aak.parentapp.LoginActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="net.m3aak.parentapp.MainActivityNew"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="net.m3aak.parentapp.ForGotPassActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="net.m3aak.parentapp.ProfileActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="net.m3aak.parentapp.ContactUsActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="net.m3aak.parentapp.SettingActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="net.m3aak.parentapp.MessageActivityNew"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <activity
+            android:name="net.m3aak.parentapp.SingleStudentMapActivty"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="net.m3aak.parentapp.NotificationListActivity"
+            android:configChanges="layoutDirection|locale"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="net.m3aak.parentapp.ChangePasswordActivity"
+            android:configChanges="layoutDirection|locale"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity
+            android:name="net.m3aak.parentapp.ChildInformation"
+            android:configChanges="layoutDirection|locale"
+            android:label="Tracking Bus"
+            android:screenOrientation="portrait"/>
+
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCHVtSNxflPgE60xeykRtNnERvBwHj_XOA" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <service android:name="net.m3aak.parentapp.services.UpdateChatListService" />
+        <service android:name="net.m3aak.parentapp.services.UpdateBlinkService" />
+
+        <activity
+            android:name="net.m3aak.parentapp.SetAbsentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <service android:name=".fcm.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corner_popup_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:background="#f2f2f2"
+        android:gravity="start"
+        android:padding="15dp"
+        android:text="@string/language_title"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_margin="10dip"
+        android:background="@drawable/round_corner"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/english_txt_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_corner_fill"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/english_txt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/us"
+                android:drawablePadding="5dip"
+                android:drawableStart="@drawable/us"
+                android:gravity="center"
+                android:paddingBottom="8dip"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dip"
+                android:text="@string/english"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/arabic_txt_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/arabic_txt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/saudi"
+                android:drawablePadding="5dip"
+                android:drawableStart="@drawable/saudi"
+                android:gravity="center"
+                android:paddingBottom="8dip"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dip"
+                android:text="@string/arabic"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/english_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:padding="15dp"
+            android:text="@string/english"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_margin="7dip"
+            android:background="@color/clicked" />
+
+        <RadioButton
+            android:id="@+id/arabic_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/arabic"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/action_save"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:text="SAVE"
+            android:theme="@style/MyButton" />
+    </LinearLayout>
+
+</LinearLayout>

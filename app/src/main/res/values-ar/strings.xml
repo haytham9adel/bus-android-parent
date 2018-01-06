@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">M3aak Parent</string>
+    <string name="dialog_default_title">هنا الصورة \ رسالة!</string>
+    <string name="dialog_ok">حسنا</string>
+    <string name="dialog_cancel">إلغاء</string>
+    <string name="LOADING">جاري التحميل...</string>
+    <string name="wait">برجاء الإنتظار...</string>
+    <string name="continue_txt">استمر</string>
+    <string name="no">لا</string>
+    <string name="settings">الإعدادات</string>
+    <string name="update_setting">إعدادات التحديث</string>
+    <string name="student_tracking">تتبع طالب</string>
+    <string name="destination">المكان المقصود</string>
+    <string name="source">مصدر</string>
+
+    <string name="hello_world">مرحبا بالعالم!</string>
+    <string name="action_settings">إعدادات</string>
+    <string name="title">تتبع M3aak حافلة المدرسة</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="servernotresponding">الخادم لا يستجيب</string>
+    <string name="nointernet">الرجاء التحقق من اتصال الإنترنت!</string>
+    <string name="fieldempty">لا يمكن أن يكون الحقل فارغا.</string>
+    <string name="confirm_pwd_different">كلمة المرور الجديدة وتأكيد كلمة المرور ليست نفسها.</string>
+    <string name="tab">علامة التبويب</string>
+    <string name="page">صفحة</string>
+    <string name="btn_send">إرسال</string>
+    <string-array name="menulist">
+        <item>Dynamic Tab 1</item>
+        <item>Dynamic Tab 2</item>
+        <item>Dynamic Tab 3</item>
+        <item>Dynamic Tab 4</item>
+        <item>Dynamic Tab 5</item>
+        <item>Dynamic Tab 6</item>
+        <item>Dynamic Tab 7</item>
+    </string-array>
+    <string name="login_heading">دخول المستخدم</string>
+    <string name="login_username">اسم المستخدم</string>
+    <string name="login_password">كلمة المرور</string>
+    <string name="forgotpwd_heading">هل نسيت كلمة المرور ؟</string>
+    <string name="changepwd_current">كلمة المرور الحالية</string>
+    <string name="changepwd_new">كلمة المرور الجديدة</string>
+    <string name="changepwd_newconfirm">تأكيد كلمة المرور الجديدة</string>
+
+    <string name="notifications">إيقاف او تشغيل الإشعارات</string>
+    <string name="parent_profile">الملف الشخصي</string>
+    <string name="updating_attendance">تحديث الحضور</string>
+    <string name="fetching">جاري تجهيز </string>
+    <string name="please_confirm">برجاء التأكيد</string>
+    <string name="notgoingschool">انت الآن تقوم بإبلاغ المدرسة بعدم حضور الطالب الي المدرسة في الأيام المحددة أعلاه</string>
+    <string name="reason">سبب الغياب</string>
+    <string name="went_wrong">حدث خطأ.</string>
+    <string name="selectdates">حدد التواريخ.</string>
+    <string name="setting_not_saved">وضع لا المحفوظة.</string>
+
+    <string name="no_internet">الرجاء التحقق من اتصال الإنترنت الخاص بك!</string>
+    <string name="enter_valid_email">أدخل عنوان بريد إلكتروني صالح.</string>
+    <string name="try_again">حاول مرة اخرى !</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="fetching_list">جاري تجهيز البيانات</string>
+    <string name="student_report">تقرير طالب</string>
+    <string name="incorrect_dates">اختيار التواريخ غير صحيحة.</string>
+    <string name="data_not_available">البيانات غير متوفرة.</string>
+    <string name="norecordfound">لا يوجد سجلات !</string>
+    <string name="attendance_report">تقرير الحضور</string>
+    <string name="student_info">تقرير عن الطالب</string>
+    <string name="write_msg">يرجى إرسال رسالة وحاول مرة أخرى!</string>
+
+    <!--"Sun", "Mon", "Tue",
+                  "Wed", "Thu", "Fri", "Sat"-->
+    <string-array name="week_name">
+        <item>شمس</item>
+        <item>الإثنين</item>
+        <item>الثلاثاء</item>
+        <item>تزوج</item>
+        <item>الخميس</item>
+        <item>الجمعة</item>
+        <item>السبت</item>
+    </string-array>
+
+    <!--"January", "February", "March",
+                "April", "May", "June", "July", "August", "September",
+                "October", "November", "December"-->
+    <string-array name="month">
+        <item>كانون الثاني</item>
+        <item>فبراير</item>
+        <item>مارس</item>
+        <item>أبريل</item>
+        <item>قد</item>
+        <item>يونيو</item>
+        <item>يوليو</item>
+        <item>أغسطس</item>
+        <item>سبتمبر</item>
+        <item>شهر اكتوبر</item>
+        <item>تشرين الثاني</item>
+        <item>ديسمبر</item>
+    </string-array>
+
+    <!--"Attendance Report", "Student Info"-->
+    <string-array name="child_tab">
+        <item>معلومات الطالب</item>
+        <item>تقرير الحضور</item>
+    </string-array>
+
+    <!--Navigation menu string-->
+    <!--"Home", "Profile", "Chat With School", "Notifications", "Report Absent", "Change Password", "Settings", "Log Out"-->
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="chat_with_school">مراسلة المدرسة</string>
+    <string name="notification">الإشعارات</string>
+    <string name="report_absent">إبلاغ عن غياب </string>
+    <string name="change_pass">تغيير كلمة المرور</string>
+    <string name="setting">الإعدادات</string>
+    <string name="log_out">خروج</string>
+
+
+    <string name="remember_me">تذكرني</string>
+    <string name="login_txt">تسجيل الدخول</string>
+    <string name="call">مكالمة</string>
+    <string name="parent_login">تسجيل دخوال الآباء</string>
+    <string name="submit">إرسال</string>
+    <string name="present">حاضر</string>
+    <string name="present_total">إجمالي الحضور</string>
+    <string name="absent_total">إجمالي الغياب</string>
+    <string name="holidays_total">إجمالي العطلات</string>
+    <string name="absent">غائب</string>
+    <string name="holidays">العطلات</string>
+    <string name="from">من تاريخ</string>
+    <string name="to">الي تاريخ</string>
+    <string name="search">بحث</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="middle_name">الاسم الأوسط</string>
+    <string name="family_name">اسم العائلة</string>
+    <string name="mobile_number">رقم المحمول</string>
+    <string name="contact_number">رقم ثابت</string>
+    <string name="english">English</string>
+    <string name="arabic">العربية</string>
+    <string name="chat">المراسله</string>
+    <string name="CheckedIn">دققت في</string>
+    <string name="CheckedOut">فحصت</string>
+    <string name="busspeedgreaterthan">سرعة الحافلة أكبر من </string>
+    <string name="busatwrongroute">خروج الحافلة عن المسار المحدد</string>
+    <string name="update">تحديث</string>
+    <string name="view_detail">عرض التفاصيل</string>
+
+    <string name="student_list">قائمة الطلاب</string>
+
+    <string name="language">اللغة</string>
+    <string name="sound">إيقاف اوتشغيل الصوت</string>
+    <string name="messages">الرسائل القصيرة SMS</string>
+    <string name="on">تشغيل</string>
+    <string name="off">إيقاف</string>
+    <string name="language_title">اختر اللغة المفضلة</string>
+    <string name="write_here">اكتب الرسالة هنا</string>
+    <string name="setting_saved">تم حفظ الإعدادات بنجاح.</string>
+
+
+    <string name="father_name">الأب</string>
+    <string name="grand_name">الجد</string>
+    <string name="gender">الجنس</string>
+    <string name="class_">الصف المدرسي</string>
+    <string name="birth_date">تاريخ الميلاد</string>
+    <string name="nationality">الجنسية</string>
+    <string name="blood_type">فصيلة الدم</string>
+
+    <string name="driver_instant_message">استقبال الرسائل من السائق</string>
+    <string name="morning_arrival_msg">صباحاً : قبل وصول الحافلة ب 15 دقيقة</string>
+    <string name="evening_arrival_msg">مساءاً : قبل وصول الحافلة ب 15 دقيقة</string>
+
+    <string name="change_language">تغيير اللغة</string>
+    <string name="yes">نعم</string>
+    <string name="cancel">إلغاء</string>
+    <string name="want_logout">هل تريد الخروج ؟</string>
+
+    <string name="save">حفظ</string>
+
+    <string name="km">كم / ساعة</string>
+
+    <string name="driver" > : السائق</string>
+
+    <string name="instant_message">رسالة لحظية</string>
+    <string name="morning_msg">قدوم صباحي </string>
+    <string name="evening_msg"> قدوم مسائي</string>
+    <string name="checkin_msg"> تسجيل دخول</string>
+    <string name="checkOut_msg"> تسجيل خروج</string>
+</resources>

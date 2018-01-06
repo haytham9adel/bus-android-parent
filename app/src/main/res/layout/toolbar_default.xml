@@ -1,0 +1,51 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ToolBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00af7e"
+    android:minHeight="@dimen/abc_action_bar_default_height_material">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="#00af7e">
+        <ImageView
+            android:id="@+id/toggle_btn"
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:paddingRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingEnd="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/toggle_btn" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/toggle_btn"
+            android:layout_toEndOf="@+id/toggle_btn"
+            android:layout_toLeftOf="@+id/ty"
+            android:layout_toStartOf="@+id/ty"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/ty"
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/option"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

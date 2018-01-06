@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/no_txt"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:text="1"
+            android:textColor="#232323"
+            android:textDirection="locale"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:id="@+id/noti_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/notification"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#00DDFF"
+            android:textDirection="locale" />
+
+        <TextView
+            android:id="@+id/noti_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noti_type"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/notifications"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#232323"
+            android:textDirection="locale" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/noti_message"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="Notification"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#9a9797"
+            android:textDirection="locale" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/time"
+            android:background="#ededed"
+            android:textDirection="locale" />
+
+    </RelativeLayout>
+
+</LinearLayout>

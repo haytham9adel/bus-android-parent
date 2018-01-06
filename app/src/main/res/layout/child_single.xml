@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dip">
+
+        <net.m3aak.parentapp.MyWidgets.CircleImageView
+            android:id="@+id/child_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile_big"
+            circle:border_color="#000000"
+            circle:border_width="1dp" />
+
+        <TextView
+            android:id="@+id/ch_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/child_img"
+            android:layout_toRightOf="@+id/child_img"
+            android:gravity="center_vertical"
+            android:textColor="#222" />
+
+        <ImageView
+            android:id="@+id/trackStudent"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/viewStudent"
+            android:layout_toStartOf="@+id/viewStudent"
+            android:src="@drawable/gps_blink1" />
+
+        <TextView
+            android:id="@+id/viewStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_corner_login"
+            android:padding="10dp"
+            android:text="@string/view_detail"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/notification_subtext_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/driver_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:visibility="visible"
+        android:layout_marginBottom="5dip">
+
+        <TextView
+            android:id="@+id/driver_"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/driver"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/driver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/driver_"
+            android:layout_toRightOf="@+id/driver_"
+            android:gravity="center_vertical"
+            android:textColor="#222" />
+
+        <ImageView
+            android:id="@+id/calldriver"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/driver"
+            android:layout_toStartOf="@+id/driver"
+            android:src="@drawable/call" />
+
+        <TextView
+            android:id="@+id/driver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_corner_login"
+            android:padding="10dp"
+            android:text="@string/view_detail"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/notification_subtext_size"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>

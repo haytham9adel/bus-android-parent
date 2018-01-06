@@ -1,0 +1,62 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    style="@style/ToolBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00af7e"
+    android:minHeight="@dimen/abc_action_bar_default_height_material">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="#00af7e">
+
+        <ImageView
+            android:id="@+id/toggle_btn"
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/toggle_btn" />
+
+        <ImageView
+            android:id="@+id/imgViewSchoolLogo"
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:layout_margin="5dip"
+            android:layout_toEndOf="@+id/toggle_btn"
+            android:layout_toRightOf="@+id/toggle_btn"
+            android:background="#FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_school_logo" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imgViewSchoolLogo"
+            android:layout_toLeftOf="@+id/imgViewSos"
+            android:layout_toRightOf="@+id/imgViewSchoolLogo"
+            android:layout_toStartOf="@+id/imgViewSos"
+            android:gravity="start|left"
+            android:lines="1"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/imgViewSos"
+            android:layout_width="@dimen/abc_action_bar_default_height_material"
+            android:layout_height="@dimen/abc_action_bar_default_height_material"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

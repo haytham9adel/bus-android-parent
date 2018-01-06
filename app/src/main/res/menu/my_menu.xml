@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Single menu item 
+         Set id, icon and Title for each menu item
+    -->
+    <item android:id="@+id/menu_attendance"
+        android:icon="@drawable/attendance"
+        android:title="Attendance Report" />
+
+    <item android:id="@+id/menu_absence"
+        android:icon="@drawable/report"
+        android:title="Absence Report" />
+
+</menu>
