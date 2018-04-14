@@ -7,10 +7,19 @@ public class ConstantKeys {
     //http://we4it.net/Tracking_bus/webservices/add_student_absent
     //  public static String SERVER_URL = "http://192.168.1.26:8080/Tracking_bus/webservices/";
     //   public static String IMAGE_URL = "http://192.168.1.26:8080/Tracking_bus/resources/dashboard/uploads/student/";
-    public static String IMAGE_URL = "http://m3aak.net/resources/dashboard/uploads/student/";
-    public static String SERVER_URL = "http://m3aak.net/webservices/";
+//    public static String IMAGE_URL = "http://m3aak.net/resources/dashboard/uploads/student/";
+//    public static String SERVER_URL = "http://m3aak.net/webservices/";
+//    public static String SCHOOL_IMAGE_URL = "http://m3aak.net/resources/dashboard/uploads/school/";
+    //TODO : update way to school
+    // /maaknewfiles/student
+
+    public static String BASE_URL = "http://m3aak.net/";
+
+    public static String IMAGE_URL =BASE_URL+ "maaknewfiles/student/";
+    public static String SERVER_URL = BASE_URL +"webservices/";
+    public static String SCHOOL_IMAGE_URL =  BASE_URL + "maaknewfiles/school/";
+
     public static String NOTY_UTL = SERVER_URL + "notification?method=all_notification&route_id=";
-    public static String SCHOOL_IMAGE_URL = "http://m3aak.net/resources/dashboard/uploads/school/";
     public static String USER_EMAIL = "user_email";
     public static String USER_PASS = "user_pass";
     public static String CONTACT_NO = "contact_number";
